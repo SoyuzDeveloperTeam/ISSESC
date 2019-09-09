@@ -20,6 +20,11 @@ namespace ISSESC
 {
     public partial class MainForm : Form
     {
+        SMMain SMMain = new SMMain();
+        CO.SOMain SOMain = new CO.SOMain();
+        FGB.FGBMain FGBMain = new FGB.FGBMain();
+
+
         public MainForm()
         {
             InitializeComponent();
@@ -28,6 +33,21 @@ namespace ISSESC
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            SMMain.Show();
+        }
+
+        private void PictureBox5_Click(object sender, EventArgs e)
+        {
+            SOMain.Show();
+        }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+            FGBMain.Show();
         }
     }
 }
