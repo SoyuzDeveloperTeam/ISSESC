@@ -20,7 +20,7 @@ namespace ISSESC
 {
     public partial class MainForm : Form
     {
-        SMMain SMMain = new SMMain();
+        //SMMain SMMaain = new SMMain();
         CO.SOMain SOMain = new CO.SOMain();
         FGB.FGBMain FGBMain = new FGB.FGBMain();
 
@@ -37,17 +37,21 @@ namespace ISSESC
 
         private void PictureBox2_Click(object sender, EventArgs e)
         {
-            SMMain.Show();
+            SMMain sMMain = new SMMain();
+            sMMain.Show();
+            this.Visible = false;
         }
 
         private void PictureBox5_Click(object sender, EventArgs e)
         {
             SOMain.Show();
+            this.Visible = false;
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)
         {
             FGBMain.Show();
+            this.Visible = false;
         }
     }
 }
